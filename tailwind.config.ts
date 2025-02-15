@@ -11,8 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        cartcolor: "#F35C7A",
       },
     },
+    
   },
   plugins: [],
 } satisfies Config;
