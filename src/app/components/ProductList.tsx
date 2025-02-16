@@ -1,6 +1,9 @@
+"use client"
+import { useState } from "react";
 import Link from 'next/link';
 import Image from 'next/image';
 import Product from './Product';
+
 const ProductList = () => {
     return (
         <div className='mt-12 flex gap-x-8 gap-y-16 justify-between flex-wrap p-5'>
