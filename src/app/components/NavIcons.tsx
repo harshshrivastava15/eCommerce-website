@@ -3,6 +3,7 @@ import Image from "next/image";
 import {useState} from "react";
 import Link from "next/link";
 import {useRouter} from "next/navigation";
+import CartBox from "./CartBox";
 
 const NavIcons = () => {
     const [ifProfile,setIfProfile] = useState(false);
@@ -38,7 +39,7 @@ const NavIcons = () => {
             <div className="relative cursor-pointer" onClick={()=>setIsCart(prev=>!prev)}>
             <Image src="/cart.png" alt="" width={22} height={22}  />
             <div className="absolute -top-4 -right-4 w-6 h-6 bg-cartcolor rounded-full flex items-center justify-center text-white text-sm">2</div>
-            </div>
+            </div>{isCart && <CartBox />   }
             
         </div>
     )
